@@ -1,4 +1,4 @@
-# MYPHARMA:A Pharmacy For All Your Needs
+# MYPHARMA: A Pharmacy For All Your Needs
 
 “Everything in life is uncertain. That is how you know you are existing in the world, the uncertainty. Of course, this is why we sometimes want to return to the past, because we know it, or think we do. It's a song we've heard.” We, being humans can get into an emergency condition, where there can be a requirement of instant medical attention. Since hospitals are not accessible to everyone in their proximity so sometimes getting proper medicine or proper first aid at the right time can prove to be life saviour. We are living in the 20th Century and have the comfort of ordering anything just while sitting at home. But the problem with all the current medicine delivery apps is that they have speculated delivery time and usually take more than 1 day to deliver the medicines. If there is an emergency condition, we are forced to wander in search of medical stores near our home and this is where our application comes into the picture.
 
