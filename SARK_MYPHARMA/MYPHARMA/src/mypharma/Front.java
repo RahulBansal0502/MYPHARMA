@@ -49,22 +49,18 @@ public class Front extends JFrame implements ActionListener
         b2.setBackground(Color.BLACK);
         b2.setForeground(Color.WHITE);
         
-        b3 = new JButton("View Details ");
-        b3.setBackground(Color.BLACK);
-        b3.setForeground(Color.WHITE);
+       
         
         
        b1.setFont(new Font("Arial", Font.BOLD, 20));
-       b1.setBounds(400,350,100,30);
+       b1.setBounds(360,350,140,30);
        b1.addActionListener(this);
 
        b2.setFont(new Font("Arial", Font.BOLD, 20));
-       b2.setBounds(550,350,100,30);
+       b2.setBounds(530,350,140,30);
        b2.addActionListener(this);
 
-       b3.setFont(new Font("Aial", Font.BOLD, 20));
-       b3.setBounds(400,400,250,30);
-       b3.addActionListener(this);
+      
         
         
         
@@ -88,7 +84,7 @@ public class Front extends JFrame implements ActionListener
        
         l1.add(b1);
         l1.add(b2);
-        l1.add(b3);
+        
        
         l7 =new JLabel("SARK...");
         l7.setBounds(600,440,200,20);
@@ -137,11 +133,7 @@ public class Front extends JFrame implements ActionListener
                     setVisible(false);
                      new Ologin();
                 }
-                else if(ae.getSource()==b3)
-                {
-                    setVisible(false);
-                     new Details(1);
-                }
+                
                 
             }
         

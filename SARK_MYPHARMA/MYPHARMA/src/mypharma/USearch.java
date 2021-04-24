@@ -74,32 +74,32 @@ public class USearch implements ActionListener
 
         SName = new JLabel("SHOP NAME",SwingConstants.CENTER);
         SName.setFont(new Font("Tahoma", Font.PLAIN, 15));
-        SName.setBounds(20,250,100,30);
+        SName.setBounds(20,215,100,30);
         f.add(SName);
 
-        SName = new JLabel("SHOP OWNER",SwingConstants.CENTER);
+        SName = new JLabel("MEDICINE QTY.",SwingConstants.CENTER);
         SName.setFont(new Font("Tahoma", Font.PLAIN, 15));
-        SName.setBounds(140,250,100,30);
+        SName.setBounds(140,215,120,30);
+        f.add(SName);
+
+        SName = new JLabel("PRICE",SwingConstants.CENTER);
+        SName.setFont(new Font("Tahoma", Font.PLAIN, 15));
+        SName.setBounds(260,215,150,30);
         f.add(SName);
 
         SName = new JLabel("CONTACT",SwingConstants.CENTER);
         SName.setFont(new Font("Tahoma", Font.PLAIN, 15));
-        SName.setBounds(260,250,150,30);
+        SName.setBounds(430,215,100,30);
         f.add(SName);
 
         SName = new JLabel("ADDRESS",SwingConstants.CENTER);
         SName.setFont(new Font("Tahoma", Font.PLAIN, 15));
-        SName.setBounds(430,250,100,30);
-        f.add(SName);
-
-        SName = new JLabel("E-mail ID",SwingConstants.CENTER);
-        SName.setFont(new Font("Tahoma", Font.PLAIN, 15));
-        SName.setBounds(530,250,160,30);
+        SName.setBounds(530,215,160,30);
         f.add(SName);
 
         table = new JTable();
         table.setBackground(Color.white);
-        table.setBounds(20, 280, 640, 300);
+        table.setBounds(20, 250, 640, 300);
         f.add(table);
 
         // f.getContentPane().setBackground(Color.WHITE);
@@ -118,8 +118,15 @@ public class USearch implements ActionListener
                 Conn c =new Conn();
                 String m = t1.getText();
                 String pincode=t2.getText();
+                String str="Create view temp_table as Select quantity,shop_name,address,contact_no,pincode,medicineid,shop.shopid as shopid From shop,shop_has_medicine Where shop.shopid=shop_has_medicine.shopid and quantity>0;";
+                try{
+                    c.s.executeQuery(str);
+                }
+                catch(Exception e){
+ 
+                }
 
-                String str="Select shop_name,quantity,cost,contact_no,address From medicine,temp_table Where medicine.medicineid=temp_table.medicineid And medicine.medicine_name='"+m+"' And pincode='"+pincode+"';";
+                 str="Select shop_name,quantity,cost,contact_no,address From medicine,temp_table Where medicine.medicineid=temp_table.medicineid And medicine.medicine_name='"+m+"' And pincode='"+pincode+"';";
     
                 ResultSet rs=c.s.executeQuery(str);
                 table.setModel(DbUtils.resultSetToTableModel(rs));

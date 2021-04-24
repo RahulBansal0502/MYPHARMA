@@ -4,29 +4,30 @@
  * and open the template in the editor.
  */
 package mypharma;
+
 import net.proteanit.sql.DbUtils;
 import java.net.*;
 import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
 import java.sql.*;
+
 /**
  *
  * @author bansa
  */
-public class OHome implements ActionListener
+public class UHome implements ActionListener
 {
-     JFrame l4;
+    JFrame l4;
     JButton b1,b2,b3;
     JTextField t;
     JPasswordField p1,p2; 
     JLabel l1;
     JTable table;
-    String ownerid;
+    String userid;
 
-    OHome(String id){
-
-        ownerid=id;
+    UHome(String id){
+        userid=id;
         l4 = new JFrame("Home");
         l4.setBounds(400,190,700,500);
         l4.setVisible(true);
@@ -40,7 +41,7 @@ public class OHome implements ActionListener
         l1.setFont(new Font("Times New Roman",Font.BOLD,30));
         l4.add(l1);
         
-        b1=new JButton("Search Medicine");
+        b1=new JButton("search medicine");
         b1.setBounds(30,80,200,40);
         b1.setBackground(Color.BLACK);
         b1.setForeground(Color.white);
@@ -70,13 +71,15 @@ public class OHome implements ActionListener
 
        JLabel address =new JLabel("Shop address");
        address.setFont(new Font("Tahoma",Font.PLAIN,13));
-       address.setBounds(460,155,126,14);
+       address.setBounds(430,155,126,14);
        l4.add(address);
 
         table=new JTable();
         table.setBackground(Color.WHITE);
         table.setBounds(50,180,600,250);
        l4.add(table);
+
+     
 
         try{
             Conn c= new Conn();
@@ -88,7 +91,8 @@ public class OHome implements ActionListener
         {
             e.printStackTrace();
         }
-        l4.getContentPane().setBackground(Color.YELLOW);
+        Color myColor = new Color(250, 250, 110);
+        l4.getContentPane().setBackground(myColor);
         l4.setVisible(true);
         l4.setSize(700,500);
         l4.setLocation(450,200);
@@ -99,13 +103,14 @@ public class OHome implements ActionListener
         try{
             if(e.getSource()==b1)
             {
+                new USearch(userid);
                 l4.setVisible(false);
-                new OSearch(ownerid);
             }
+          
            else if(e.getSource()==b3)
            {
+               new UDashboard(userid);
                l4.setVisible(false);
-               new Dashboard(ownerid);
            }
                
         
@@ -117,6 +122,7 @@ public class OHome implements ActionListener
     }
     public static void main(String[] args)
     {
-        new OHome("sam1234");
+        new UHome("mahi1234");
     }
+    
 }

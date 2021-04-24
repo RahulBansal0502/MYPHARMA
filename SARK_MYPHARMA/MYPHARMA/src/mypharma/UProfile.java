@@ -35,7 +35,7 @@ f.setDefaultCloseOperation(f.EXIT_ON_CLOSE);
         l6.setIcon(img);
 
         l8 = new JLabel("User's Profile");
-        l8.setBounds(250,20,500,50);
+        l8.setBounds(250,50,500,50);
         l8.setFont(new Font("BELL MT",Font.BOLD,30));
         l8.setForeground(Color.black);
         l6.add(l8);
@@ -43,43 +43,43 @@ f.setDefaultCloseOperation(f.EXIT_ON_CLOSE);
 
  
         l1 = new JLabel("User ID");
-        l1.setBounds(150,70,150,30);
+        l1.setBounds(150,130,150,30);
         l1.setFont(new Font("serif",Font.BOLD,20));
         l6.add(l1);
 
         t1=new JTextField(userid);
-        t1.setBounds(350,70,200,30);
+        t1.setBounds(350,130,200,30);
         l6.add(t1);
 
         l2= new JLabel("Contact No.");
-        l2.setBounds(150,120,150,30);
+        l2.setBounds(150,180,150,30);
         l2.setFont(new Font("serif",Font.BOLD,20));
         l6.add(l2);
 
         t2=new JTextField();
-        t2.setBounds(350,120,200,30);
+        t2.setBounds(350,180,200,30);
         l6.add(t2);
         
         l3= new JLabel("E-mail ID");
-        l3.setBounds(150,170,150,30);
+        l3.setBounds(150,230,150,30);
         l3.setFont(new Font("serif",Font.BOLD,20));
         l6.add(l3);
 
         t3=new JTextField();
-        t3.setBounds(350,170,200,30);
+        t3.setBounds(350,230,200,30);
         l6.add(t3);
 
         b = new JButton("Submit");
         b.setBackground(Color.BLACK);
         b.setForeground(Color.WHITE);
-        b.setBounds(180,320,150,30);
+        b.setBounds(180,280,150,30);
         
         l6.add(b);
 
         b1=new JButton("Cancel");   
         b1.setBackground(Color.BLACK);
         b1.setForeground(Color.WHITE);
-        b1.setBounds(380,320,150,30);
+        b1.setBounds(380,280,150,30);
         
         l6.add(b1);
         

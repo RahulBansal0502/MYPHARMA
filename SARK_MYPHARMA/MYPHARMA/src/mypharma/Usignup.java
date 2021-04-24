@@ -95,7 +95,7 @@ f.setDefaultCloseOperation(f.EXIT_ON_CLOSE);
 
         b2=new JButton("Cancel");
         b2.setBackground(Color.BLACK);
-        b2.setBounds(320,300,100,50);
+        b2.setBounds(320,300,150,50);
         b2.setForeground(Color.WHITE);
         b2.setFont(new Font("Arial", Font.BOLD, 20));
         l4.add(b2);
