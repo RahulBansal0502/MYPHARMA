@@ -31,7 +31,7 @@ f.setDefaultCloseOperation(f.EXIT_ON_CLOSE);
         l6=new JLabel();
         l6.setBounds(0,0,900,480);
         l6.setLayout(null);
-        ImageIcon img = new ImageIcon(ClassLoader.getSystemResource("mypharma/Images/Medicine.jpg"));
+        ImageIcon img = new ImageIcon(ClassLoader.getSystemResource("mypharma/Images/Medicines.jpg"));
         l6.setIcon(img);
 
         l8 = new JLabel("ADD MEDICINE");

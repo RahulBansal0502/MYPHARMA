@@ -63,7 +63,7 @@ f.setDefaultCloseOperation(f.EXIT_ON_CLOSE);
         l4.add(l2);
 
         l2=new JLabel("Confirm Password");
-        l2.setBounds(30, 230, 400, 50);
+        l2.setBounds(30, 220, 400, 50);
         l2.setFont(new Font("serif",Font.PLAIN,30));
         l2.setForeground(Color.WHITE);
         l4.add(l2);
@@ -86,7 +86,7 @@ f.setDefaultCloseOperation(f.EXIT_ON_CLOSE);
 
         b1=new JButton("Sign-Up");
         b1.setBackground(Color.WHITE);
-        b1.setBounds(80,280,150,50);
+        b1.setBounds(80,300,150,50);
         b1.setForeground(Color.BLACK);
         b1.setFont(new Font("Arial", Font.BOLD, 20));
         l4.add(b1);
@@ -95,7 +95,7 @@ f.setDefaultCloseOperation(f.EXIT_ON_CLOSE);
 
         b2=new JButton("Cancel");
         b2.setBackground(Color.WHITE);
-        b2.setBounds(250,280,100,50);
+        b2.setBounds(250,300,150,50);
         b2.setForeground(Color.BLACK);
         b2.setFont(new Font("Arial", Font.BOLD, 20));
         l4.add(b2);

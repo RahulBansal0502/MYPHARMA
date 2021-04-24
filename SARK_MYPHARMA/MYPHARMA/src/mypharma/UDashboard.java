@@ -91,12 +91,12 @@ public class UDashboard extends JFrame implements ActionListener
                 
                 if(ae.getSource()==b2)
                 {
-                    // setVisible(false);
+                    setVisible(false);
                      new UHome(userid);
                 }
                 else if(ae.getSource()==b3)
                 {
-                    // setVisible(false);
+                    setVisible(false);
                      new UProfile(userid);
                 }
                
