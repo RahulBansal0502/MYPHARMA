@@ -4,33 +4,6 @@
 
 We designed a system by using an object oriented paradigm where all the medical stores are present on the single platform. We have implemented this by forming several classes, each of them working is explained below. Basically we try to buit a real and user friendly application. The In this We have implemented an actionListner interface so that we can perform certain actions when clicking the buttons and design the action by overriding the actionPerformed method of actionListener interface. Inorder to design the panel and setting background images adjusted with margin we used swing library in java by importing javax.swing.* .We have used sql as well so that we can store the entered entries by including jar files which works as a jdbc driver.
 
-
-## Data Base
-- Total Tables
-
--<img src="images/database1.png" alt="drawing" width="500"/>
-
--	Shop Owner
-
--<img src="images/database2.png" alt="drawing" width="500"/>
-
--   User
-
--<img src="images/database6.png" alt="drawing" width="500"/>
-
--   Medicine
-
--<img src="images/database3.png" alt="drawing" width="500"/>
-
--   Shop
-
--<img src="images/database4.png" alt="drawing" width="500"/>
-
--   shop has medicine 
-
--<img src="images/database5.png" alt="drawing" width="500"/>
-
-
 ## Highlights
 -   HomePage
 
@@ -75,3 +48,30 @@ We designed a system by using an object oriented paradigm where all the medical 
 -   Search Medicine
 
 -<img src="images/search_medicine.png" alt="drawing" width="500"/>
+
+## DataBase
+- Total Tables
+
+-<img src="images/database1.png" alt="drawing" width="500"/>
+
+-	Shop Owner
+
+-<img src="images/database2.png" alt="drawing" width="500"/>
+
+-   User
+
+-<img src="images/database6.png" alt="drawing" width="500"/>
+
+-   Medicine
+
+-<img src="images/database3.png" alt="drawing" width="500"/>
+
+-   Shop
+
+-<img src="images/database4.png" alt="drawing" width="500"/>
+
+-   shop has medicine 
+
+-<img src="images/database5.png" alt="drawing" width="500"/>
+
+
