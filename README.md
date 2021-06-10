@@ -4,6 +4,20 @@
 
 We designed a system by using an object oriented paradigm where all the medical stores are present on the single platform. We have implemented this by forming several classes, each of them working is explained below. Basically we try to buit a real and user friendly application. The In this We have implemented an actionListner interface so that we can perform certain actions when clicking the buttons and design the action by overriding the actionPerformed method of actionListener interface. Inorder to design the panel and setting background images adjusted with margin we used swing library in java by importing javax.swing.* .We have used sql as well so that we can store the entered entries by including jar files which works as a jdbc driver.
 
+## Goals
+-   End User
+    1.  The user will be able to get the details of nearby medical 
+        stores after signing up / logging in to the portal.
+    2.  The user will be able to add up their query of a particular 
+        medicine.
+
+-   Medical Store Owner
+    1.  The shop owner will be able to get the details of the medical 
+        requirements of the people after signing up / logging in to the 
+        portal.
+    2.  After signup/login owner will be able to add/edit medicines 
+        available at his store.
+
 ## Highlights
 -   HomePage
 
